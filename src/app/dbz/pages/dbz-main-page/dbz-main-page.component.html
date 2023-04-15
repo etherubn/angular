@@ -1,0 +1,11 @@
+<h2 class="text-center">Dbz Main</h2>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <app-lista-personajes (onIndice)="eliminarPersonaje($event)" [personajes]="personajes"></app-lista-personajes>
+        </div>
+        <div class="col">
+            <app-agregar-personaje (onPersonajeNuevo)="agregarPersonaje($event)"></app-agregar-personaje>
+        </div>
+    </div>
+</div>

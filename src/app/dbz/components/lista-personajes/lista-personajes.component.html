@@ -1,0 +1,12 @@
+
+<h3>Personajes</h3>
+<ul>
+    <li *ngFor="let personaje of personajes;let i =index" class="d-flex border mb-2 justify-content-between w-75">
+        <div>
+            <span>Personaje: {{personaje.nombre}} - Poder: {{personaje.poder}}</span>
+        </div>
+        <button class="btn btn-danger" (click)="enviarIndice(i)">X</button>
+    </li>
+</ul>
+
+
